@@ -1,0 +1,225 @@
+/**index.wxss**/
+
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+} */
+
+.bgc {
+  background: #44adef;
+}
+
+.t-fixed {
+  position: fixed;
+  top: 0;
+  color: #fff;
+  width: 100%;
+  height: 150rpx;
+  z-index: 9999;
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.t-fixed .iconfont {
+  line-height: 50rpx;
+  font-size: 36rpx;
+}
+
+.src-address {
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 36rpx;
+}
+
+.rushing {
+  width: 260rpx;
+  font-size: 32rpx;
+  line-height: 40rpx;
+  text-align: center;
+  margin: 5rpx 0;
+}
+
+.rushing view {
+  display: inline-block;
+  font-size: 25rpx;
+  background: rgb(197, 195, 195);
+  color: rgb(95, 93, 93);
+  padding: 5rpx;
+}
+
+.rushing .active {
+  background: black;
+  color: white;
+}
+
+.search {
+  width: 85%;
+  height: 80rpx;
+}
+
+.search_arr {
+  /* border: 2px solid gold;   */
+  border-radius: 50rpx;
+  margin-left: 20rpx;
+  background: #fff;
+}
+
+.search_arr input {
+  font-size: 30rpx;
+  margin-left: 60rpx;
+  height: 60rpx;
+  margin-top: 10rpx;
+  border-radius: 5px;
+  color: #ddd;
+  padding-left: 5%;
+}
+
+.bc_text {
+  line-height: 68rpx;
+  height: 68rpx;
+  margin-top: 34rpx;
+}
+
+.sousuo {
+  margin-left: 15rpx;
+  width: 15%;
+  line-height: 150%;
+  text-align: center;
+  border: 1px solid #d0d0d0;
+  border-radius: 10rpx;
+}
+
+.page_row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rpx;
+}
+
+.searchcion {
+  margin: 10rpx 10rpx 10rpx 10rpx;
+  font-size: 35rpx;
+  position: absolute;
+  left: 25rpx;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.page_row .iconfont {
+  font-size: 50rpx;
+  line-height: 80rpx;
+  width: 10%;
+  padding-left: 5%;
+}
+
+/*轮播*/
+
+.swp {
+  margin-top: 150rpx;
+  width: 94%;
+  padding: 10rpx 3%;
+  height: 375rpx; /*当前 525rpx*/
+}
+
+.swp>view {
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+
+.swp swiper {
+  height: 355rpx;
+}
+
+.swp swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+/*menus h:50rpx(o) +  180rpx*2(t) */
+
+.menus {
+  padding:0 3%;
+}
+
+.menu-o, .menu-t {
+  padding: 0 2%;
+  /* margin: 0 3%; */
+  display: flex;
+}
+
+.menu-o {
+  /* width: 100%; */
+  background: rgb(250, 250, 250);
+  color: rgb(188, 188, 188);
+  justify-content: space-around;
+  border-radius: 25rpx 25rpx 0 0;
+  font-size: 25rpx;
+  line-height: 50rpx;
+}
+
+.menu-t {
+  background: #fff;
+  height: 360rpx;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.menu-t> view {
+  width: 125rpx;
+  height: 180rpx;
+  /* border: red 1px solid; */
+  text-align: center;
+}
+
+.menu-t text {
+  display: block;
+  font-size: 30rpx;
+  line-height: 45rpx;
+  color: #555;
+}
+
+.menu-t image {
+  width: 120rpx;
+  height: 120rpx;
+  border: black 1px solid;
+}
+
+/* 菜单滑动*/
+
+.dots{
+  display: flex;
+  justify-content: center;
+  height:20rpx;
+  background:#fff;
+}
+.dots .dot{
+  margin: 0 5rpx;
+  width: 10rpx;
+  height: 8rpx;
+  background: #999;
+  border-radius: 8rpx;
+  transition: all .6s;
+}
+.dots .dot.active{
+  width: 30rpx;
+  background: #44adef;
+} 
