@@ -59,15 +59,6 @@ Page({
       {
         label: '收纳日用'
       },
-      {
-        label: '鞋子服装'
-      },
-      {
-        label: '生鲜蔬菜'
-      },
-      {
-        label: '面包蛋糕'
-      }
     ],
     menuRow: 5, //菜单每行显示个数
     menuColumn: 2, //菜单行数
