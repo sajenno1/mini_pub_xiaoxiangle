@@ -3,8 +3,7 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/cart/cart",
-    "pages/mine/mine",
-    "static/img/icon"
+    "pages/mine/mine"
   ],
   "window": {
     "backgroundTextStyle": "light",

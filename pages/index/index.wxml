@@ -22,10 +22,10 @@
     </view>
   </view>
 
-  <view class="swp bgc" style="margin-top:150rpx">
+  <view class="swp bgc">
     <view>
       <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
-        <block wx:for="{{imgUrls}}">
+        <block wx:for="{{imgUrls}}" wx:key="*">
           <swiper-item>
             <image src="{{item}}" class="slide-image" width="355" height="150" />
           </swiper-item>
@@ -41,34 +41,45 @@
       <text>极速送达</text>
       <text>一站购齐</text>
     </view>
-
+    <!--菜单-->
     <swiper bindchange="swiperChange" style="height:360rpx" circular="true">
-      <block wx:for="{{menuList.length / (menuColumn * menuRow)}}" wx:for-index="oIndex">
+      <block wx:for="{{menuList.length / (menuColumn * menuRow)}}" wx:key="*" wx:for-index="oIndex">
         <swiper-item catchtouchmove="{{menuList.length / (menuColumn * menuRow) > 1 ? ture : false}}">
           <view class="menu-t">
-            <block wx:for="{{menuList}}" wx:for-index="iIndex">
+            <block wx:for="{{menuList}}" wx:for-index="iIndex" wx:key="*">
               <view wx:if="{{iIndex >= (oIndex *  menuColumn * menuRow ) &&  iIndex < ((oIndex + 1) *  menuColumn * menuRow )}}">
                 <image></image>
                 <text>{{item.label}}</text>
               </view>
             </block>
             <block wx:if="{{ ( oIndex + 1 ) > menuList.length / (menuColumn * menuRow) }}">
-              <view wx:for="{{menuRow - menuList.length % menuRow}}">
+              <view wx:for="{{menuRow - menuList.length % menuRow}}" wx:key="*">
               </view>
             </block>
           </view>
         </swiper-item>
       </block>
     </swiper>
+    <!--菜单超过1页才有的dots-->
     <block wx:if="{{menuList.length / (menuColumn * menuRow) > 1}}">
       <view class="dots" style="">
-        <block wx:for="{{menuList.length / (menuColumn * menuRow)}}">
+        <block wx:for="{{menuList.length / (menuColumn * menuRow)}}" wx:key="*">
           <view class="dot{{index == menuCurrent ? ' active' : ''}}"></view>
         </block>
       </view>
     </block>
-    <view style="height:10rpx;"></view>
-
   </view>
+
+  <!--优惠活动-->
+  <block wx:if="{{promotion}}">
+    <block wx:for="{{promotion}}" wx:key="*">
+      <view class="promotion bgc">
+        <image src="{{item.img}}"></image>
+        <view>马上抢</view>
+      </view>
+    </block>
+  </block>
+
+
 
 </view>

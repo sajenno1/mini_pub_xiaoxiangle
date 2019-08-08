@@ -63,6 +63,14 @@ Page({
     menuRow: 5, //菜单每行显示个数
     menuColumn: 2, //菜单行数
     menuCurrent: 0, //当前菜单
+    promotion: [
+      {
+        img:'../../static/img/example-img/13800.jpg',
+      },
+    ],//优惠活动
+    poster:[
+      
+    ],//促销海报
   },
   //事件处理函数
   bindViewTap: function() {

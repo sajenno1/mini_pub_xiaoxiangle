@@ -23,6 +23,8 @@
 
 .bgc {
   background: #44adef;
+  padding: 0 3%;
+  padding-bottom: 20rpx;
 }
 
 .t-fixed {
@@ -134,10 +136,7 @@
 /*轮播*/
 
 .swp {
-  margin-top: 150rpx;
-  width: 94%;
-  padding: 10rpx 3%;
-  height: 375rpx; /*当前 525rpx*/
+  margin-top: 170rpx;
 }
 
 .swp>view {
@@ -156,13 +155,10 @@
 
 /*menus h:50rpx(o) +  180rpx*2(t) */
 
-.menus {
-  padding:0 3%;
-}
+
 
 .menu-o, .menu-t {
   padding: 0 2%;
-  /* margin: 0 3%; */
   display: flex;
 }
 
@@ -223,3 +219,21 @@
   width: 30rpx;
   background: #44adef;
 } 
+
+
+/**优惠活动图片*/
+.promotion {
+  position: relative;
+}
+.promotion image {
+  width: 100%;
+}
+.promotion>view {
+  position: absolute;
+  bottom: 30rpx;
+  right: 4%;
+  background: red;
+  padding: 15rpx;
+  border-radius: 30rpx;
+  color: #ccc;
+}
