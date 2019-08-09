@@ -68,8 +68,10 @@ Page({
         img:'../../static/img/example-img/13800.jpg',
       },
     ],//优惠活动
-    poster:[
-      
+    posters:[
+      {
+        img:'../../static/img/example-img/expimg2.jpg',
+      }
     ],//促销海报
   },
   //事件处理函数

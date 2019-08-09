@@ -80,6 +80,20 @@
     </block>
   </block>
 
+  <!--促销海报-->
+  <block wx:if="{{posters}}">
+    <block wx:for="{{posters}}" wx:key="*">
+      <view class="posters bgc">
+        <image src="{{item.img}}"></image>
+      </view>
+    </block>
+  </block>
+
+  <!--分享-->
+  <view class="shared">
+    <text class="iconfont icon-fenxiang"></text>
+    <text>分享</text>
+  </view>
 
 
 </view>
